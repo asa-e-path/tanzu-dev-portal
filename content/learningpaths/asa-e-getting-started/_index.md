@@ -5,8 +5,9 @@ featured: true
 featuredspot: 1
 level1: Azure Spring Apps Enterprise Getting Started
 layout: intro
-description: Learn about Azure Spring Apps Enterprise (ASA-E) edition from the ground up. You get a firm foundation 
-to understand ASA-E and it's development patterns. 
+description: >
+  Learn about Azure Spring Apps Enterprise (ASA-E) edition from the ground up. You get a firm foundation 
+  to understand ASA-E and it's development patterns. 
 team:
 - Steven Pousty
 - Jorge Morales Pou
@@ -16,9 +17,8 @@ tags:
 - Cloud Development
 experience: Beginner
 duration: 240
-  oldPath: ""
-  aliases: 
-- ""
+oldPath: ""
+aliases: []
 ---
 
 ## Why is this learning path important?

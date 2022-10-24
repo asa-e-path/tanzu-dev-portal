@@ -5,21 +5,18 @@ layout: single
 team:
 - Steven Pousty
 - Jorge Morales Pou
-title: Add A PostgreSQL Connection
-weight: 40
+title: Externalize your data in an external Database
+weight: 70
 tags:
 - Azure
 - Spring
 - Cloud Development
 oldPath: ""
-aliases:
-- ""
+aliases: []
 ---
 
 
-If you area already familiar with Azure Spring Apps concepts and terminology feel free to skip
-this module. This page is intended to help developer new to Azure understand some of the common concepts and terms
-
+This can show 
 
 NOTE FOR AUTHORS The pages are based on this outline
 https://onevmw-my.sharepoint.com/:w:/g/personal/spousty_vmware_com/EfM2l_jNwS5ErTm0H_JNpTEByE57Wd-nFMGw3TBDxbMMLw
