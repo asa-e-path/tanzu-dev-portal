@@ -5,20 +5,17 @@ layout: single
 team:
 - Steven Pousty
 - Jorge Morales Pou
-title: Understanding Monitoring
+title: Access your application from the outside world
 weight: 60
 tags:
 - Azure
 - Spring
 - Cloud Development
 oldPath: ""
-aliases:
-- ""
+aliases: []
 ---
 
-
-If you area already familiar with Azure Spring Apps concepts and terminology feel free to skip
-this module. This page is intended to help developer new to Azure understand some of the common concepts and terms
+Spring Cloud Gateway
 
 
 NOTE FOR AUTHORS The pages are based on this outline

@@ -5,8 +5,8 @@ layout: single
 team:
 - Steven Pousty
 - Jorge Morales Pou
-title: Create and Deploy your Application in ASA-E
-weight: 22
+title: Setup yourself to work with Azure Spring Apps
+weight: 18
 tags:
 - Azure
 - Spring
@@ -14,13 +14,6 @@ tags:
 oldPath: ""
 aliases: []
 ---
-
-Since we now want to run this application in the cloud, we need to show how to create the Azure Spring Apps and then deploy the app we created before. 
-
-Then, we can mention other ways to deploy the app without using the Build Service, e.g. Building the container locally
-
-
-## OLD CONTENT BELOW
 
 ## Prerequisites
 
@@ -48,11 +41,10 @@ TODO[[[Put in a screenshot and text for intellij login]]]
 
 With those preliminaries out of the way, let's deploy your Spring Application on ASA-E.
 
-## Creating the Application
+## Configure your system and create your work area in Azure Spring Apps
 
 We are going to create just enough application that you can learn the terminology and basic mechanics of using ASA-E for your applications. In later modules we will go into more depth.
 
-TODO[[[Pet clinic is no good - this app will be super simple the whole way and not do anything real]]]
 1. Login - because we can't open an iframe for the portal
    `az login --use-device-code`
    https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest#az-login
@@ -74,58 +66,3 @@ az configure --defaults \
     location=${REGION} \
     spring=${SPRING_APPS_SERVICE}
 ```
-
-4. Create app on start.spring.io
-   Keep all the defaults
-   ![img.png](images/create-app-startspring.png)
-
-5. Then just add the Spring Web Dependency
-   ![img.png](images/create-app-dependencies.png)
-
-I think we can avoid all this if we just add this minimal code to the Workshop Image. Then they can avoid start.spring and we can open a page in an editor
-
-6. For the code it will be really ugly but also really simple. Make sure to emphasize this is for instructional purposes only and only to demonstrate how to work with ASA-E
-
-```java
-//these need to be added
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-// Add the RestController Annotation
-// This let's us respond at / with a string
-// REMEMBER - this is not a good pattern to use for a normal application
-@RestController
-@SpringBootApplication
-public class DemoApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
-
-    // Add this whole section which defines what to do when the user requests
-    // the base URL of our website.
-	@RequestMapping("/")
-	public String helloSpring(){
-		return "hello spring";
-	}
-
-}
-```
-
-7. Not sure I want them to run it locally - not sure that is important, though it is simple to do
-8.  First create the app with nothing it in
-    `az spring app create -n springapp -s the-asa-service -g playing1  --assign-endpoint true --cpu 2 --memory 3`
-
-9. Now we package it up on our end and deploy it to the app we created
-   `az spring app deploy -n springapp --artifact-path target/demo-0.0.1-SNAPSHOT.jar -s the-asa-service -g playing1`
-
-
-
-
-
-If you area already familiar with Azure Spring Apps concepts and terminology feel free to skip
-this module. This page is intended to help developer new to Azure understand some of the common concepts and terms
-
-
-NOTE FOR AUTHORS The pages are based on this outline
-https://onevmw-my.sharepoint.com/:w:/g/personal/spousty_vmware_com/EfM2l_jNwS5ErTm0H_JNpTEByE57Wd-nFMGw3TBDxbMMLw

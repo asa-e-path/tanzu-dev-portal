@@ -12,14 +12,7 @@ tags:
 - Spring
 - Cloud Development
 oldPath: ""
-aliases:
-- ""
+aliases: []
 ---
 
-
-If you area already familiar with Azure Spring Apps concepts and terminology feel free to skip
-this module. This page is intended to help developer new to Azure understand some of the common concepts and terms
-
-
-NOTE FOR AUTHORS The pages are based on this outline
-https://onevmw-my.sharepoint.com/:w:/g/personal/spousty_vmware_com/EfM2l_jNwS5ErTm0H_JNpTEByE57Wd-nFMGw3TBDxbMMLw
+Now that you have deployed your application, let's go through the process of making a simple change, since we will be making many in the following chapters to augment our application while demonstrating more of the Azure Spring Apps capabilities
