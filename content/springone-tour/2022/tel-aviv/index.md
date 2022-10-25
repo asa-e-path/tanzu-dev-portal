@@ -14,10 +14,11 @@ city_name: Tel Aviv
 isFree: true
 noIntroCopy: true
 noLeadForward: true
+telavivContact: true
 location:
+    - 'Peres Center'
     - 'The Israeli Innovation Center'
-    - 'Ahuzat Bayit St 2'
-    - 'Tel Aviv-Yafo'
+    - 'Kedem 132 St, Jaffa'
 hide_newsletter: true
 
 ---
@@ -55,8 +56,8 @@ It’s time to take your existing applications to the next level.
 		<h3 class="-text-white mt-0">Thank you for registering!</h3>
         <p>Save the date:</p>
         <p>
-            <a href="https://connect.tanzu.vmware.com/rs/625-IUJ-009/images/SpringOne-Tour-Tel-Aviv.ics" target="_blank" id="">Outlook/iCal</a> 
-            <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=SpringOne+Tour+Tel+Aviv&amp;details=Come+meet+other+Spring+enthusiasts%2C+experts%2C+and+advocates+from+your+local+community.+Interact+with+VMware+speakers+and+fellow+attendees.+Learn+about+new+Spring+developments%2C+AppDev+best+practices%2C+plus+tools+and+techniques+that+are+quickly+becoming+industry+standard.+It%E2%80%99s+time+to+take+your+existing+applications+to+the+next+level.&amp;location=Tel+Aviv&amp;dates=20221117T060000Z%2F20221117T160000Z" target="_blank" id="">Google</a>
+            <a href="https://d18qp689yd19g7.cloudfront.net/2022/SpringOne%2BTour%2BTel%2BAviv.ics" target="_blank" id="">Outlook/iCal</a> 
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=SpringOne+Tour+Tel+Aviv&details=Come+meet+other+Spring+enthusiasts%2C+experts%2C+and+advocates+from+your+local+community.+Interact+with+VMware+speakers+and+fellow+attendees.+Learn+about+new+Spring+developments%2C+AppDev+best+practices%2C+plus+tools+and+techniques+that+are+quickly+becoming+industry+standard.+It%E2%80%99s+time+to+take+your+existing+applications+to+the+next+level.&location=Peres+Center%2C+The+Israeli+Innovation+Center%2C+Kedem+132+St%2C+Jaffa&dates=20221117T060000Z%2F20221117T160000Z" target="_blank" id="">Google</a>
         <p>
 	</div>
 </div>
@@ -113,7 +114,7 @@ It’s time to take your existing applications to the next level.
     <div class="row py-3 border-bottom flex-nowrap">
         <div class="time col-2 pl-0 h4">12:15</div>
         <div class="talk-title col-7 h4">
-            Running Untrusted Code as WASM in Spring Cloud Gateway and Spring Cloud Function
+            Running Untrusted Code in Spring Using WebAssembly
         </div>
         <div class="name col-3">
             <h3 class="h4 py-0">
@@ -130,10 +131,10 @@ It’s time to take your existing applications to the next level.
     <div class="row py-3 border-bottom flex-nowrap">
         <div class="time col-2 pl-0 h4">13:40</div>
         <div class="talk-title col-7 h4">
-            Our Cloud Native Journey with Spring
+            Production Considerations for Spring on Kubernetes
         </div>
         <div class="name col-3">
-            <h3 class="h4 py-0">Ronen Yair</h3>
+            <h3 class="h4 py-0"><a class="lightbox" href="#oded-shopen">Oded Shopen</a></h3>
         </div>
     </div>
     <div class="row py-3 border-bottom flex-nowrap">
@@ -152,15 +153,15 @@ It’s time to take your existing applications to the next level.
     </div>
     <div class="row py-3 border-bottom flex-nowrap">
         <div class="time col-2 pl-0 h4">15:00</div>
-        <div class="talk-title col-7 h4">Thinking Architectually</div>
+        <div class="talk-title col-7 h4">TBD</div>
         <div class="name col-3">
-            <h3 class="h4 py-0"><a class="lightbox" href="#nate-schutta">Nate Schutta</a></h3>
+            <!-- <h3 class="h4 py-0"><a class="lightbox" href="#nate-schutta">Nate Schutta</a></h3> -->
         </div>
     </div>
     <div class="row py-3 border-bottom flex-nowrap">
         <div class="time col-2 pl-0 h4">15:45</div>
         <div class="talk-title col-7 h4">
-            What’s New in Spring Cloud?
+            Declarative Clients in Spring
         </div>
         <div class="name col-3">
             <h3 class="h4 py-0">
@@ -182,7 +183,7 @@ It’s time to take your existing applications to the next level.
             </h3>
         </div>
     </div>
-    <div class="row py-3 border-bottom flex-nowrap">
+    <div class="row py-3 flex-nowrap">
         <div class="time col-2 pl-0 h4">17:00</div>
         <div class="talk-title col-7 h4">
             Happy Hour
@@ -198,14 +199,19 @@ It’s time to take your existing applications to the next level.
 #### Diamond
 
 <br>
-<img src="../../images/logo-terasky.svg" style="height:40px" class="mr-5 mb-5">
-<img src="../../images/logo-dell-technologies.svg" style="height:40px; transform: translateY(5px)" class="mb-5">
+<div class="sponsor-container">
+<img id="terasky-sponsor" src="../../images/logo-terasky.svg" style="height:40px" class="mr-5 mb-5 d-block d-lg-inline">
+<img id="dell-sponsor" src="../../images/logo-dell-technologies.svg" style="height:40px; transform: translateY(5px)" class="mb-5 d-block d-lg-inline">
+</div>
 
 <br>
 
 #### Gold
 
 <br>
-<img src="../../images/logo-wizards.svg" style="height:80px" class="mr-5 mb-5">
-<img src="../../images/logo-bezeq.png" style="height:80px" class="mr-5 mb-5">
-<img src="../../images/logo-bynet.svg" style="height:80px" class="mr-5 mb-5">
+<div class="sponsor-container">
+<img src="../../images/logo-wizards.svg" style="height:80px" class="mr-5 mb-5 d-block d-lg-inline">
+<img src="../../images/logo-bezeq.png" style="height:80px" class="mr-5 mb-5 d-block d-lg-inline">
+<img id="bynet-sponsor" src="../../images/logo-bynet.svg" style="height:80px" class="mr-5 mb-5 d-block d-lg-inline">
+<img src="../../images/logo-portworx.png" style="height:80px" class="mb-5 d-block d-lg-inline">
+</div>
