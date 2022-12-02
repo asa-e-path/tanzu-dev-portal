@@ -37,15 +37,14 @@ $ az account show
 ```
 If you have not logged in you should be prompted to login. If you are logged in, the response should be some JSON that contains your Subscription ID, Name, and other fields.
 
-TODO[[[Put in a screenshot and text for intellij login]]]
-
 With those preliminaries out of the way, let's deploy your Spring Application on ASA-E.
 
 ## Configure your system and create your work area in Azure Spring Apps
 
-We are going to create just enough application that you can learn the terminology and basic mechanics of using ASA-E for your applications. In later modules we will go into more depth.
+In this module you are only going to create just enough application that you can learn the terminology and basic mechanics of using ASA-E for your applications. In later modules we will go into more depth.
 
-1. Login - because we can't open an iframe for the portal
+The first step will be to use the CLI to login to Azure. Because Azure web console and auth follow good security practices, you have to use a device code to login. 
+Use this command:
    `az login --use-device-code`
    https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest#az-login
 

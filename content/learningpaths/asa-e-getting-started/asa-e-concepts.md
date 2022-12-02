@@ -34,15 +34,18 @@ A subscription can have zero more resource groups. Resource Groups are used to c
 
 ![](images/terminology-resource-group.png)
 
+### Services
 Resource groups may contain **Services**. The term service is used to describe different things in the Azure system. Typically, it is used to name a resource provided by the Azure platform. For example, Azure App Services, Azure Spring Apps, Azure Functions, Azure Cosmos DB, Azure Blob Storage, and Azure Key Vault are all examples of Azure provided services.
 
 When you create an Azure Spring Apps Enterprise (ASA-E) service, you will need to give it a service name. This means, the term service can refer to either be a pre-defined service from Azure or a user named service hosted in Azure. Usually there is more than one service in the same resource group, especially  as part of a microservices “application”.
 
 When you create an instance of a service, you will have to specify the Location, also called **Region**, where it should be created. A location will identify where on the globe you want your services to be hosted. Within a location or region there are **Availability Zones**, which represent redundant data centers for the region. If there are multiple locations in a broad geographic area (such as the East Coast of the United States), the higher the number of the location (East US 2 vs East US) the more recent the creation of that region.
 
+![](images/terminology-services.png)
+
 ### Application
 
-**Application** is a running instance of your code within an Azure hosting service, such as an ASA-E service or Azure Static Web Hosting service. There can also multiple applications in the same ASA-E service. An application serves as the template for higher level resources for all deployments, such as CPU, allow public URL, liveness probes, persistent storage, and JVM options. 
+**Application** is a container for running your code within an Azure hosting service, such as an ASA-E service or Azure Static Web Hosting service. There can also multiple applications in the same ASA-E service. An application serves as the template for higher level resources for all deployments, such as CPU, allow public URL, liveness probes, persistent storage, and JVM options.
 
 ### Deployment
 
@@ -54,6 +57,3 @@ There can also be multiple deployments for the same application. An example woul
 
 
 
-
-NOTE FOR AUTHORS The pages are based on this outline
-https://onevmw-my.sharepoint.com/:w:/g/personal/spousty_vmware_com/EfM2l_jNwS5ErTm0H_JNpTEByE57Wd-nFMGw3TBDxbMMLw

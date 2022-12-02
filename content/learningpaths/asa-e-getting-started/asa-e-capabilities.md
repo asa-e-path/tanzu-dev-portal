@@ -14,13 +14,11 @@ tags:
 oldPath: ""
 aliases: []
 ---
-If you are already familiar with Azure Spring Apps concepts and terminology feel free to skip
-this module. This page is intended to help developer new to Azure understand some of the common concepts and terms
 
 ## VMware Tanzu capabilities present in Azure Spring Apps Enteprise
 
-When you create an instance of an Azure Spring App Enterprise you will have the following capabilities available to
-you for use.
+In addition to the base functionality that comes with Azure Spring Apps, using the Enterprise edition provides quite a bit more functionality.
+An instance of an Azure Spring App Enterprise  will have the following capabilities available for you to use.
 
 ### Build Service
 
